@@ -129,7 +129,7 @@ class MEXCCoinFinder:
                         usdt_pairs = [item['symbol'] for item in data if item['symbol'].endswith('USDT')]
                         if usdt_pairs:
                             st.success(f"✅ Found {len(usdt_pairs)} USDT pairs from ticker endpoint")
-                            return usdt_pairs[:50]  # Limit for testing
+                            return usdt_pairs[:200]  # Limit for testing
                     
                     elif 'symbols' in data:
                         # Standard exchange info format
